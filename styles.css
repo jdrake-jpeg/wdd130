@@ -1,0 +1,14 @@
+body {
+    background-color: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a {
+    padding: 15px;
+    color: black;
+    font-size: small;
+}
+
+img {
+    width: 400px;
+}
