@@ -200,6 +200,30 @@
   grid-row: 2/6;
 } 
 
+/* Activity 7 styles */
+.content7 {
+  
+  /* This is the parent of the activity 6 boxes. */
+  }
+  .title {
+  width: 100%;
+  text-align: center;
+  }
+  .image {
+  width: 100%;
+  }
+  .background{
+  width: 100%;
+  height: 300px;
+  background-color: #2596be;
+   
+  
+  }
+  .para {
+  padding: 20px;
+  width: 90%;
+  margin: 0 auto;
+  }
 
 /* Do not make any changes below here */
 .activity {
