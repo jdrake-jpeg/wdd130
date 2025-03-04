@@ -1,0 +1,65 @@
+/* ===============================
+   HOME PAGE STYLES (Wireframe Layout)
+   =============================== */
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    height: 250px;
+    background: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Text Boxes */
+.text-box {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 1.2em;
+    border: 1px solid #ddd;
+    width: 80%;
+}
+
+/* Image Placeholders */
+.image-placeholder {
+    width: 100%;
+    height: 200px;
+    background: darkgray;
+}
+
+/* Split Section (Image + Text) */
+.split {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.split .image-placeholder {
+    width: 50%;
+    height: 200px;
+}
+
+.split .text-box {
+    width: 50%;
+    padding: 20px;
+}
+
+/* ===============================
+   RESPONSIVE DESIGN
+   =============================== */
+@media (max-width: 768px) {
+    .split {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .split .image-placeholder,
+    .split .text-box {
+        width: 100%;
+    }
+}

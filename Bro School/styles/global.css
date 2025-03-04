@@ -1,0 +1,62 @@
+/* ===============================
+   GLOBAL STYLES (Applies to All Pages)
+   =============================== */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: black;
+    text-align: center;
+    padding-top: 100px; /* Push content below fixed header */
+}
+
+/* ===============================
+   HEADER & NAVIGATION STYLES
+   =============================== */
+header {
+    background-color: #f8f8f8;
+    padding: 15px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* NAVIGATION GRID */
+.nav-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* NAVIGATION LINKS */
+.nav-item a {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px;
+}
+
+/* LOGO */
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 4;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+}
