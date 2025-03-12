@@ -1,13 +1,11 @@
 document.addEventListener("DOMContentLoaded", function() {
-  fetch("header.html")
-      .then(response => {
-          if (!response.ok) {
-              throw new Error(`HTTP error! Status: ${response.status}`);
-          }
-          return response.text();
-      })
-      .then(data => {
-          document.body.insertAdjacentHTML("afterbegin", data);
-      })
-      .catch(error => console.log("Error loading header:", error));
+    fetch("header.html")
+        .then(response => response.text())
+        .then(data => {
+            document.body.insertAdjacentHTML("afterbegin", data);
+        })
+        .then(() => {
+            document.querySelector("main").style.marginTop = "140px"; // Ensure content moves down after header loads
+        })
+        .catch(error => console.log("Error loading header:", error));
 });

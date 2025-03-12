@@ -8,11 +8,16 @@
     font-family: Arial, sans-serif;
 }
 
+main {
+    margin-top: 140px;
+    position: relative;
+    z-index: 1;
+}
 body {
     background-color: #ffffff;
     color: black;
     text-align: center;
-    padding-top: 100px; /* Push content below fixed header */
+    padding-top: 30px; /* Push content below fixed header */
 }
 
 /* ===============================
@@ -20,12 +25,12 @@ body {
    =============================== */
 header {
     background-color: #f8f8f8;
-    padding: 15px 0;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 9999;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* NAVIGATION GRID */
@@ -57,6 +62,6 @@ header {
 }
 
 .logo img {
-    height: 10em;
+    height: 7em;
     width: auto;
 }
